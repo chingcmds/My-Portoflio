@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Charity Eramis — Full Stack Web Developer portfolio. React, Node.js, REST APIs. Open to remote opportunities."
+    />
+    <meta name="author" content="Charity Eramis" />
+    <meta property="og:title" content="Charity Eramis | Full Stack Web Developer" />
+    <meta
+      property="og:description"
+      content="Software developer with 2+ years experience building web applications, APIs, and reliable full stack features."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/profile.jpg" />
+    <meta name="theme-color" content="#fff9fb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#14121f" media="(prefers-color-scheme: dark)" />
+    <title>Charity Eramis | Full Stack Web Developer</title>
+    <script>
+      ;(function () {
+        var stored = localStorage.getItem('portfolio-theme')
+        var theme =
+          stored === 'light' || stored === 'dark'
+            ? stored
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light'
+        document.documentElement.setAttribute('data-theme', theme)
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

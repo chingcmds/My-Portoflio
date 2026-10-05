@@ -1,0 +1,151 @@
+.hero {
+  padding-top: 2.5rem;
+  background: var(--gradient-hero);
+}
+
+.hero__grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.hero__terminal {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0 0 0.75rem;
+}
+
+.hero__prompt {
+  color: var(--accent-mint);
+  margin-right: 0.35rem;
+}
+
+.hero__cursor {
+  animation: blink 1s step-end infinite;
+  color: var(--accent-pink);
+}
+
+.hero__cursor--inline {
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero__name {
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  line-height: 1.1;
+  margin: 0 0 0.75rem;
+  font-weight: 800;
+}
+
+.hero__role {
+  font-family: var(--font-mono);
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+  min-height: 1.6em;
+}
+
+.hero__role-label {
+  color: var(--accent-lavender);
+}
+
+.hero__role-value {
+  color: var(--accent-peach);
+}
+
+.hero__tagline {
+  margin: 0 0 1.5rem;
+  max-width: 36ch;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.hero__location {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.hero__visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__blob {
+  width: min(280px, 75vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--bg-elevated);
+  box-shadow: var(--shadow), 0 0 0 6px rgba(255, 143, 171, 0.25);
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__blob img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.hero__float {
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.hero__float--code {
+  top: 8%;
+  right: 5%;
+  color: var(--accent-mint);
+}
+
+.hero__float--heart {
+  bottom: 12%;
+  left: 0;
+  color: var(--accent-pink);
+}
+
+@media (min-width: 900px) {
+  .hero__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+  }
+
+  .hero__visual {
+    justify-content: flex-end;
+  }
+
+  .hero__blob {
+    width: 300px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__cursor {
+    animation: none;
+  }
+
+}

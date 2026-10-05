@@ -1,0 +1,35 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0 2rem;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.footer__inner p {
+  margin: 0;
+}
+
+.footer__inner span {
+  color: var(--accent-pink);
+  font-family: var(--font-mono);
+}
+
+.footer__inner a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

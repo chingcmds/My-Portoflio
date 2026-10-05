@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  --font-body: 'Nunito', system-ui, sans-serif;
+  --font-mono: 'Fira Code', ui-monospace, monospace;
+
+  --bg: #fff9fb;
+  --bg-elevated: #ffffff;
+  --bg-soft: #f3ecff;
+  --text: #2d2640;
+  --text-muted: #6b6280;
+  --border: rgba(45, 38, 64, 0.12);
+  --shadow: 0 12px 40px rgba(120, 90, 160, 0.12);
+
+  --accent-pink: #ff8fab;
+  --accent-lavender: #b8a9ff;
+  --accent-mint: #7ee8c7;
+  --accent-peach: #ffc8a2;
+
+  --gradient-hero: linear-gradient(135deg, #ffe4ec 0%, #ede4ff 45%, #d9fff3 100%);
+  --gradient-text: linear-gradient(120deg, #ff6b9d, #9b7bff, #3dd6a8);
+
+  --dot-red: #ff6b6b;
+  --dot-yellow: #ffd166;
+  --dot-green: #6bcb77;
+
+  --nav-bg: rgba(255, 249, 251, 0.85);
+  --code-bg: #faf5ff;
+  --pill-bg: rgba(184, 169, 255, 0.2);
+  --pill-border: rgba(155, 123, 255, 0.35);
+
+  --focus-ring: 0 0 0 3px rgba(155, 123, 255, 0.45);
+  --radius: 16px;
+  --radius-lg: 24px;
+  --max-width: 1100px;
+}
+
+[data-theme='dark'] {
+  --bg: #14121f;
+  --bg-elevated: #1e1b2e;
+  --bg-soft: #252238;
+  --text: #f4f0ff;
+  --text-muted: #b8b0d0;
+  --border: rgba(244, 240, 255, 0.12);
+  --shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
+
+  --accent-pink: #ff9ec0;
+  --accent-lavender: #c4b5ff;
+  --accent-mint: #8ef5d2;
+  --accent-peach: #ffd4a8;
+
+  --gradient-hero: linear-gradient(135deg, #2a1a28 0%, #221a3a 50%, #152a28 100%);
+  --gradient-text: linear-gradient(120deg, #ff9ec0, #c4b5ff, #8ef5d2);
+
+  --nav-bg: rgba(20, 18, 31, 0.88);
+  --code-bg: #1a1728;
+  --pill-bg: rgba(196, 181, 255, 0.15);
+  --pill-border: rgba(196, 181, 255, 0.35);
+}

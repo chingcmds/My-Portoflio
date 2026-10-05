@@ -1,0 +1,51 @@
+.skills__const {
+  font-family: var(--font-mono);
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+}
+
+.skills__keyword {
+  color: var(--accent-lavender);
+}
+
+.skills__groups {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.skills__label {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  color: var(--accent-mint);
+}
+
+.skills__pills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills__pills li {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  background: var(--pill-bg);
+  border: 1px solid var(--pill-border);
+}
+
+@media (min-width: 600px) {
+  .skills__groups {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .skills__groups {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

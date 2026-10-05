@@ -1,0 +1,40 @@
+.about__card .editor-card__bar {
+  justify-content: flex-start;
+}
+
+.about__filename {
+  margin: 0 0 0 auto;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.about__body {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.about__code {
+  margin: 0;
+  padding: 1rem;
+  border-radius: var(--radius);
+  background: var(--code-bg);
+  border: 1px dashed var(--pill-border);
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--accent-lavender);
+}
+
+.about__summary {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+@media (min-width: 900px) {
+  .about__body {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: start;
+  }
+}
